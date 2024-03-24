@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styleCourse.css" />
     <title>MuhammadiaQuranAcademy</title>
   </head>
+
   <body>
     <div class="Headers">
       <img src="./images/logo.png" alt="Online Quran Academy" />
@@ -23,12 +24,24 @@
     </div>
     <nav class="navbar">
       <ul class="listItem">
-        <li><a href="quranAcademy.html">Home</a></li>
-        <li><a class="active" href="courses.html">Courses</a></li>
-        <li><a href="guide.html">Guide</a></li>
-        <li><a href="tutor.html">Become a Tutor</a></li>
-        <li><a href="about.html">About</a></li>
-        <li id="search"><input type="search" placeholder="Seacrch Here" /></li>
+        <li>
+          <a href="quranAcademy.html">Home</a>
+        </li>
+        <li>
+          <a class="active" href="courses.html">Courses</a>
+        </li>
+        <li>
+          <a href="guide.html">Guide</a>
+        </li>
+        <li>
+          <a href="tutor.html">Become a Tutor</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li id="search">
+          <input type="search" placeholder="Seacrch Here" />
+        </li>
       </ul>
     </nav>
     <!-- ----------------------------------------------------------------- -->
@@ -43,7 +56,34 @@
           quo vero, tempora et? Corrupti facilis, ratione iure eveniet alias ex
           tempore?
         </p>
-        <div class="courseBasicTitle" id="basicCourses"></div>
+        <div class="courseBasicTitle">
+          <img
+            class="basicThumbnail"
+            src="./images/quran_basic (1).jpg"
+            alt="quran basic course"
+            width="300"
+            height="250"
+          />
+          <img
+            class="basicThumbnail"
+            src="./images/quran_basic (2).jpg"
+            alt="quran basic course"
+            width="300"
+            height="250"
+          />
+          <img
+            class="basicThumbnail"
+            src="./images/quran_basic (3).jpg"
+            alt="quran basic course"
+            width="300"
+            height="250"
+          />
+          <div class="courseButton">
+            <button class="cbbtn" id="cbbtn1">Get Enroll</button>
+            <button class="cbbtn" id="cbbtn2">Get Enroll</button>
+            <button class="cbbtn" id="cbbtn3">Get Enroll</button>
+          </div>
+        </div>
       </div>
 
       <div class="intermediateSection">
@@ -56,7 +96,34 @@
           quo vero, tempora et? Corrupti facilis, ratione iure eveniet alias ex
           tempore?
         </p>
-        <div class="coursesInterTitle" id="intermediateCourses"></div>
+        <div class="coursesInterTitle">
+          <img
+            class="interThumbnail"
+            src="./images/quran_inter (1).jpg"
+            alt="quran basic course"
+            width="300"
+            height="250"
+          />
+          <img
+            class="interThumbnail"
+            src="./images/quran_inter (2).jpg"
+            alt="quran basic course"
+            width="300"
+            height="250"
+          />
+          <img
+            class="interThumbnail"
+            src="./images/quran_inter (3).jpg"
+            alt="quran basic course"
+            width="300"
+            height="250"
+          />
+          <div class="courseButton">
+            <button class="cibtn" id="cibtn1">Get Enroll</button>
+            <button class="cibtn" id="cibtn2">Get Enroll</button>
+            <button class="cibtn" id="cbbtn3">Get Enroll</button>
+          </div>
+        </div>
       </div>
 
       <div class="advanceSection">
@@ -69,7 +136,34 @@
           quo vero, tempora et? Corrupti facilis, ratione iure eveniet alias ex
           tempore?
         </p>
-        <div class="coursesAdvance" id="advanceCourses"></div>
+        <div class="coursesAdvance">
+          <img
+            class="advThumbnail"
+            src="./images/quran_ad (1).jpg"
+            alt="quran basic course"
+            width="300"
+            height="250"
+          />
+          <img
+            class="advThumbnail"
+            src="./images/quran_ad (2).jpg"
+            alt="quran basic course"
+            width="300"
+            height="250"
+          />
+          <img
+            class="advThumbnail"
+            src="./images/quran_ad (3).jpg"
+            alt="quran basic course"
+            width="300"
+            height="250"
+          />
+          <div class="courseButton">
+            <button class="cabtn" id="cabtn1">Get Enroll</button>
+            <button class="cabtn" id="cabtn2">Get Enroll</button>
+            <button class="cabtn" id="cabtn3">Get Enroll</button>
+          </div>
+        </div>
       </div>
     </div>
     <!-- --------------------------------------------------------------------------- -->
@@ -113,89 +207,9 @@
             id="SL4"
             src="./images/social (4).png"
             alt="Online Quran Academy"
-          /><a href="#" target="_blank">whatsappweb.com</a>
+          /><a href="#" target="_blank">whatsppweb.com</a>
         </div>
       </footer>
     </div>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const basicCoursesData = [
-          {
-            image: "./images/quran_basic (1).jpg",
-            buttonText: "Get Enroll",
-          },
-          {
-            image: "./images/quran_basic (2).jpg",
-            buttonText: "Get Enroll",
-          },
-          {
-            image: "./images/quran_basic (3).jpg",
-            buttonText: "Get Enroll",
-          },
-        ];
-
-        const intermediateCoursesData = [
-          {
-            image: "./images/quran_inter (1).jpg",
-            buttonText: "Get Enroll",
-          },
-          {
-            image: "./images/quran_inter (2).jpg",
-            buttonText: "Get Enroll",
-          },
-          {
-            image: "./images/quran_inter (3).jpg",
-            buttonText: "Get Enroll",
-          },
-        ];
-
-        const advanceCoursesData = [
-          {
-            image: "./images/quran_ad (1).jpg",
-            buttonText: "Get Enroll",
-          },
-          {
-            image: "./images/quran_ad (2).jpg",
-            buttonText: "Get Enroll",
-          },
-          {
-            image: "./images/quran_ad (3).jpg",
-            buttonText: "Get Enroll",
-          },
-        ];
-
-        function populateCourses(coursesData, containerId, buttonClass) {
-          const container = document.getElementById(containerId);
-          coursesData.forEach((course, index) => {
-            const courseDiv = document.createElement("div");
-            courseDiv.classList.add("courseDetail");
-
-            const image = document.createElement("img");
-            image.classList.add("courseThumbnail");
-            image.src = course.image;
-            image.alt = "quran basic course";
-            image.width = "300";
-            image.height = "250";
-
-            const button = document.createElement("button");
-            button.classList.add(buttonClass);
-            button.textContent = course.buttonText;
-
-            courseDiv.appendChild(image);
-            courseDiv.appendChild(button);
-            container.appendChild(courseDiv);
-          });
-        }
-
-        populateCourses(basicCoursesData, "basicCourses", "cbbtn");
-        populateCourses(
-          intermediateCoursesData,
-          "intermediateCourses",
-          "cibtn"
-        );
-        populateCourses(advanceCoursesData, "advanceCourses", "cabtn");
-      });
-    </script>
   </body>
 </html>
